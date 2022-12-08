@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="1">
+    <v-col cols="12" sm="2" lg="1">
         <v-btn :link="link" :to="to" flat variant="plain" class="text-text" rounded="0" block :ripple='false'>
             <slot></slot>
         </v-btn>
