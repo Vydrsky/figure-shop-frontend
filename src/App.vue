@@ -1,22 +1,26 @@
 <template>
-  <v-app>
-    <v-main>
-    </v-main>
-  </v-app>
+    <v-app>
+        <v-parallax src="" scale="0.35">
+            <the-header></the-header>
+            <v-main>
+                <router-view></router-view>
+            </v-main>
+        </v-parallax>
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from './components/global/TheHeader.vue'
 
 export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
+    components: {
+        TheHeader
+    },
 }
 </script>
+
+<style>
+a {
+    text-decoration: none;
+}
+</style>

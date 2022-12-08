@@ -16,32 +16,40 @@ const router = createRouter({
         },
         {
             path: '/home',
+            name: 'home',
             component: HomePage
         },
         {
             path: '/collection',
+            name: 'collection',
             component: CollectionPage
         },
         {
             path: '/contact',
+            name: 'contact',
             component: ContactPage
         },
         {
             path: '/about',
+            name: 'about',
             component: AboutPage
         },
         {
             path: '/order',
+            name: 'order',
             component: OrderPage
         },
         {
             path: '/admin',
+            name: 'admin',
             component: AdminMainPage
         },
         {
             //ensure last
             path: '/:notFound(.*)',
-            redirect: '/home'
+            redirect: 'home'
         }
     ],
 });
+
+export default router;
