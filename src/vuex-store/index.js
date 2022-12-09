@@ -1,13 +1,10 @@
 import { createStore } from "vuex";
 
-const store = createStore({
-    state(){
-        return{
-            
-        }
-    },
-    modules:{
+import figureModule from './figure/index'
 
+const store = createStore({
+    modules:{
+        figure: figureModule
     }
 });
 
