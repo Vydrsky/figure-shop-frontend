@@ -1,6 +1,6 @@
 <template>
     <v-parallax class="container">
-        <v-img src="/img/bg.jpg" class="blur" cover></v-img>
+        <v-img src="/img/bg.jpg" class="backdrop" cover></v-img>
         <section>
             <div class="text-center text-h1 font-weight-black pa-8 text-accent">
                 <span>INSPIRUJĄCY TEKST</span>
@@ -23,7 +23,7 @@
     height: 100vh;
 }
 
-.blur {
+.backdrop {
     position: absolute;
     top: 0;
     left: 0;
