@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import FigureCard from '../../components/dedicated/FigureCard.vue'
+import FigureCard from '../../components/dedicated/collection/CollectionFigureCard.vue'
 import { mapGetters} from 'vuex'
 
 export default {

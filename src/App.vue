@@ -33,6 +33,14 @@ body {
     -webkit-text-stroke: 1px #AB987A;
 }
 
+.bordered{
+    border: 2px solid #AB987A;
+}
+
+.centered{
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }

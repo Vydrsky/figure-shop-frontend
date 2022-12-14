@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import HeaderButton from '../dedicated/HeaderButton.vue'
+import HeaderButton from './HeaderButton.vue'
 
 export default {
     components: {
