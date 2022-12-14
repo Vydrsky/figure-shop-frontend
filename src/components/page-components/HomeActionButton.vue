@@ -1,7 +1,9 @@
 <template>
-    <v-btn :link="link" :to="to" flat variant="text" class="outline text-text text-body-1 text-lg-h6 text-center" block rounded="0" :ripple='false'>
-        <slot></slot>
-    </v-btn>
+    <v-col cols="5" sm="3" style="border: 2px solid white" class="pa-4">
+        <v-btn block rounded="0" color="accent text-center text-caption text-md-button" :link="link" :to="to" class="py-0 py-md-6">
+            <slot></slot>
+        </v-btn>
+    </v-col>
 </template>
 
 <script>
