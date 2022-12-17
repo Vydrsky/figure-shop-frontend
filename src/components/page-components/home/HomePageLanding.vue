@@ -9,7 +9,7 @@
                     </v-card>
                 </v-col>
             </v-row>
-            <v-row justify="left" align="center" class="mt-0 mt-md-4">
+            <v-row justify="start" align="center" class="mt-0 mt-md-4">
                 <v-col cols="12" md="10">
                     <p class="outline text-text text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
                         ipsum
@@ -18,7 +18,7 @@
                     </p>
                 </v-col>
             </v-row>
-            <v-row justify="left" align="center" class="mt-2 mt-md-5">
+            <v-row justify="start" align="center" class="mt-2 mt-md-5">
                 <v-col cols="12" md="8">
                     <p class="outline text-text text-body-1 text-sm-h6 text-md-h6 font-weight-black">Lorem, ipsum
                         dolor
