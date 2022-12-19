@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-row justify="center">
+        <v-row justify="center" class="pa-8">
             <home-benefits-card iconName="mdi-text-box-check-outline">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque rerum numquam corporis
                     placeat
@@ -27,7 +27,7 @@
     <home-products-carousel></home-products-carousel>
     <home-gallery></home-gallery>
     <v-container>
-        <div class="line w-100 my-12"></div>
+        <div class="line w-100 mb-12"></div>
     </v-container>
 </template>
 

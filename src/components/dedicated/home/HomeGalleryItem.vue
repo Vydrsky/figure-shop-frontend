@@ -1,7 +1,7 @@
 <template>
-    <v-col cols="12" sm="6" :md="size">
-        <v-card>
-            <v-card-actions>
+    <v-col cols="6" :md="size">
+        <v-card rounded="0" :elevation="12">
+            <v-card-actions :class="setHeight">
                 <v-img :src="filePath" cover></v-img>
             </v-card-actions>
         </v-card>
@@ -20,6 +20,15 @@ export default {
             type:String,
             required: true
         }
+    },
+    computed:{
+        setHeight(){
+            if(this.$vuetify.display.mdAndDown){
+                return 'low';
+            }else{
+                return 'high';
+            }
+        }
     }
 }
 </script>
@@ -31,11 +40,18 @@ export default {
 }
 
 .v-card-actions {
-    height: 20rem;
     padding: 0;
 }
 
+.high{
+    height:20vw;
+}
+
+.low{
+    height:30vw;
+}
+
 .v-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 </style>

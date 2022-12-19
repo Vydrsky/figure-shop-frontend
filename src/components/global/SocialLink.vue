@@ -1,6 +1,6 @@
 <template>
     <v-col cols="3" md="2" lg="1" class="d-flex justify-center align-center">
-        <v-avatar :color="color" :size="size" rounded="xl" :class="type">
+        <v-avatar :color="color" :size="size" rounded="lg" :class="type">
             <v-icon :size="iconSize">{{iconName}}</v-icon>
         </v-avatar>
     </v-col>

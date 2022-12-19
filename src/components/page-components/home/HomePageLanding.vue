@@ -11,7 +11,7 @@
             </v-row>
             <v-row justify="start" align="center" class="mt-0 mt-md-4">
                 <v-col cols="12">
-                    <p class="outline text-accent text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
+                    <p class="outline text-white text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
                         ipsum dolor sit amet consect
                         adipisicing elit amet.
                     </p>
@@ -19,7 +19,7 @@
             </v-row>
             <v-row justify="start" align="center" class="mt-2 mt-md-5">
                 <v-col cols="12" md="8">
-                    <p class="outline text-text text-body-1 text-sm-h6 text-md-h6 font-weight-black">Lorem, ipsum
+                    <p class="outline text-white text-body-1 text-sm-h6 text-md-h6 font-weight-black">Lorem, ipsum
                         dolor
                         sit amet consectetur adipisicing elit. Proin in nibh vel velit luctus aliquam id at metus.
                         Sed
@@ -29,7 +29,7 @@
                     </p>
                 </v-col>
             </v-row>
-            <v-row align="end" class="mt-16 mt-lg-16">
+            <v-row align="end" class="mt-0 mb-10 mt-lg-16">
                 <v-col cols="12">
                     <div class="line"></div>
                 </v-col>

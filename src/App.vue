@@ -27,19 +27,18 @@ export default {
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .outline{
-    -webkit-text-stroke: 1px #985E6D;
+    -webkit-text-stroke: 1px #76323F;
 }
 
 .bordered{
-    border: 2px solid #98878F;
+    border: 2px solid #76323F;
 }
 
 .line {
-    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
 }
 
 .centered{

@@ -2,13 +2,6 @@
     <article>
         <v-container>
 
-            <v-row justify="space-around" align="center" class="pa-0 py-md-5">
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-            </v-row>
             <v-row justify="center" class="text-body-1 text-text text-left">
                 <home-proof-text>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio pariatur illum
@@ -26,11 +19,18 @@
                     veniam tenetur dolorem aliquid rem.
                 </home-proof-text>
             </v-row>
+            <v-row justify="space-around" align="center" class="pa-0 py-md-5">
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+            </v-row>
             <v-row justify="center" class="mt-12 pa-0 py-md-5">
                 <home-user-comment></home-user-comment>
                 <home-user-comment></home-user-comment>
             </v-row>
-            <v-row class="mt-2 pa-0 py-md-5" justify="center">
+            <v-row class="mt-4 pa-5" justify="center">
                 <home-social-links :size="size"></home-social-links>
             </v-row>
         </v-container>
@@ -53,7 +53,7 @@ export default {
     computed: {
         size() {
             if (this.$vuetify.display.sm || this.$vuetify.display.xs) {
-                return 45;
+                return 60;
             }
             else {
                 return 90;

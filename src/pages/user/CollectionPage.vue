@@ -1,4 +1,5 @@
 <template>
+    <the-header></the-header>
     <v-row justify="space-around" no-gutters>
         <figure-card v-for="figure in figures" :key="figure.id" :figure="figure"></figure-card>
     </v-row>
@@ -6,6 +7,7 @@
 
 <script>
 import FigureCard from '../../components/dedicated/collection/CollectionFigureCard.vue'
+import TheHeader from '../../components/global/TheHeader.vue'
 import { mapGetters} from 'vuex'
 
 export default {
@@ -13,7 +15,8 @@ export default {
         ...mapGetters('figure',['figures']),
     },
     components: {
-        FigureCard
+        FigureCard,
+        TheHeader
     },
     created(){
         this.$store.dispatch('figure/getAllFigures');
