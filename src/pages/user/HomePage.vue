@@ -1,19 +1,19 @@
 <template>
     <home-page-landing></home-page-landing>
+    <home-page-benefits></home-page-benefits>
     <home-page-social-proof></home-page-social-proof>
-    <home-benefits></home-benefits>
 </template>
 
 <script>
 import HomePageLanding from '../../components/page-components/home/HomePageLanding.vue'
 import HomeSocialProofLanding from '../../components/page-components/home/HomePageSocialProof.vue'
-import HomeBenefits from '../../components/page-components/home/HomeBenefits.vue'
+import HomePageBenefits from '../../components/page-components/home/HomePageBenefits.vue'
 
 export default {
     components: {
         HomePageLanding: HomePageLanding,
         HomePageSocialProof: HomeSocialProofLanding,
-        HomeBenefits: HomeBenefits,
+        HomePageBenefits: HomePageBenefits,
     }
 }
 </script>

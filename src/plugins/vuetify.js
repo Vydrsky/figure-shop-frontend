@@ -8,14 +8,14 @@ import { createVuetify } from "vuetify";
 const mainTheme = {
   dark: false,
   colors: {
-    primary: "#0F1626",
-    secondary: "#0A0E18",
-    accent: "#FF533D",
+    primary: "#494E6B",
+    secondary: "#192231",
+    accent: "#985E6D",
     error: "#FF5252",
     info: "#2196F3",
     success: "#4CAF50",
     warning: "#FFC107",
-    detail: "#AB987A",
+    detail: "#98878F",
     text: "#F5F5F5",
   },
 };

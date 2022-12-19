@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-parallax scale="0.5" class="background" src="img/bg.jpg"></v-parallax>
+        <v-parallax scale="0.2" class="background" src="img/bg.jpg"></v-parallax>
         <v-container>
             <v-row justify="center" class="pa-2">
                 <v-col cols="6" sm="4" lg="2" class="pa-8">
@@ -10,11 +10,10 @@
                 </v-col>
             </v-row>
             <v-row justify="start" align="center" class="mt-0 mt-md-4">
-                <v-col cols="12" md="10">
-                    <p class="outline text-text text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
-                        ipsum
-                        dolor sit amet consectetur
-                        adipisicing elit.
+                <v-col cols="12">
+                    <p class="outline text-accent text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
+                        ipsum dolor sit amet consect
+                        adipisicing elit amet.
                     </p>
                 </v-col>
             </v-row>
@@ -42,7 +41,7 @@
             </v-row>
             <v-row align="end" class="mt-2 mt-md-10 pa-2">
                 <v-col>
-                    <v-sheet class="bottom-icon bg-accent mt-16 mt-md-10" elevation="10"></v-sheet>
+                    <v-sheet class="bottom-icon bg-text mt-16 mt-md-10" elevation="10"></v-sheet>
                 </v-col>
             </v-row>
         </v-container>
@@ -53,7 +52,7 @@
 import HomeActionButton from '../../dedicated/home/HomeActionButton.vue'
 
 export default {
-    components:{
+    components: {
         HomeActionButton
     }
 }
@@ -76,10 +75,6 @@ section {
 
 .logoimg {
     border-radius: 10px;
-}
-
-.line {
-    border-bottom: 2px dashed white;
 }
 
 .bottom-icon {

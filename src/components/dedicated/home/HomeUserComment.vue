@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="12" md="6" lg="6">
+    <v-col cols="12" md="7" lg="7">
         <v-card class="bg-secondary pa-5" elevation="10">
             <div class="d-flex text-start align-center">
                 <v-avatar class="bg-secondary " size="50px">
