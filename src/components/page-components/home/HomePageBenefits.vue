@@ -27,7 +27,7 @@
     <home-products-carousel></home-products-carousel>
     <home-gallery></home-gallery>
     <v-container>
-        <div class="line w-100 mb-12"></div>
+        <div class="line w-100 my-12"></div>
     </v-container>
 </template>
 

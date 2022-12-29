@@ -1,18 +1,18 @@
 <template>
     <footer>
         <v-row class="text-white bg-secondary pa-12 high-text text-body-1">
-            <v-col cols="8" sm="6" md="2">
+            <v-col cols="12" sm="6" md="2">
                 <span class="font-weight-bold">Nazwa Firmy, Miasto</span><br>
                 ul. XYZ 10/2<br>
                 44-200 Rybnik
             </v-col>
-            <v-col cols="8" sm="6" md="2">
+            <v-col cols="12" sm="6" md="2">
                 <v-icon>mdi-phone</v-icon>&emsp;+48 567 234 123<br>
                 <v-icon>mdi-phone</v-icon>&emsp;+32 125 43 13<br>
                 <v-icon>mdi-email</v-icon>&emsp; email@gmail.com<br>
             </v-col>
             <v-spacer></v-spacer>
-            <v-col cols="8" sm="6" md="2">
+            <v-col cols="12" sm="6" md="2" class="mt-2">
                 <v-row justify="space-around">
                     <v-icon size="30">mdi-facebook</v-icon>
                     <v-icon size="30">mdi-instagram</v-icon>

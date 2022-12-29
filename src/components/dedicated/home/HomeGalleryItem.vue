@@ -48,7 +48,7 @@ export default {
 }
 
 .low{
-    height:30vw;
+    height: 45vw;
 }
 
 .v-img:hover {

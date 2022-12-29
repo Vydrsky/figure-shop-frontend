@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-parallax scale="0.2" class="background" src="img/bg.jpg"></v-parallax>
+        <v-parallax scale="0.5" class="background" gradient="rgba(0,0,0,.6), rgba(0,0,0,.6)" src="img/bg.jpg"></v-parallax>
         <v-container>
             <v-row justify="center" class="pa-2">
                 <v-col cols="6" sm="4" lg="2" class="pa-8">
@@ -70,7 +70,6 @@ section {
     bottom: 0;
     right: 0;
     z-index: -1;
-    filter: brightness(25%) saturate(0);
 }
 
 .logoimg {

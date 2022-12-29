@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="8" sm="3" style="border: 2px solid white" class="pa-4">
+    <v-col cols="8" md="3" style="border: 2px solid white" class="pa-4">
         <v-btn block rounded="0" color="accent text-center text-caption text-md-button" :link="link" :to="to"
             class="py-0 py-md-6" elevation="10">
             <slot></slot>

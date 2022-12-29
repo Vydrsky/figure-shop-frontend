@@ -41,8 +41,12 @@ body {
     border-top: 2px dashed white;
 }
 
-.centered{
+.center-horizontal{
     margin: 0 auto;
+}
+
+.center-vertical {
+    margin: auto 0;
 }
 
 a {
