@@ -9,17 +9,17 @@
                     </v-card>
                 </v-col>
             </v-row>
-            <v-row justify="start" align="center" class="mt-0 mt-md-4">
+            <v-row justify="start" align="center" class="mt-0 mt-lg-4">
                 <v-col cols="12">
-                    <p class="outline text-white text-h4 text-sm-h3 text-md-h2 text-lg-h1 font-weight-black">Lorem,
+                    <p class="outline text-white text-h4 text-sm-h3 text-lg-h1 font-weight-black">Lorem,
                         ipsum dolor sit amet consect
                         adipisicing elit amet.
                     </p>
                 </v-col>
             </v-row>
-            <v-row justify="start" align="center" class="mt-2 mt-md-5">
+            <v-row justify="start" align="center" class="mt-2 mt-lg-5">
                 <v-col cols="12" md="8">
-                    <p class="outline text-white text-body-1 text-sm-h6 text-md-h6 font-weight-black">Lorem, ipsum
+                    <p class="outline text-white text-body-1 text-sm-h6 text-lg-h6 font-weight-black">Lorem, ipsum
                         dolor
                         sit amet consectetur adipisicing elit. Proin in nibh vel velit luctus aliquam id at metus.
                         Sed
@@ -29,17 +29,13 @@
                     </p>
                 </v-col>
             </v-row>
-            <v-row align="end" class="mt-0 mb-10 mt-lg-16">
-                <v-col cols="12">
-                    <div class="line"></div>
-                </v-col>
-            </v-row>
-            <v-row justify="center" class="mt-16 mt-md-16">
+            <line-spacer></line-spacer>
+            <v-row justify="center" class="mt-16 mt-lg-16">
                 <home-action-button>Dowiedz się wiecej</home-action-button>
-                <v-col cols="0" sm="1"></v-col>
+                <v-col cols="0" lg="1"></v-col>
                 <home-action-button>Przejdź do strony</home-action-button>
             </v-row>
-            <v-row align="end" class="mt-2 mt-md-10 pa-2">
+            <v-row align="end" class="mt-2 mt-lg-10 pa-2">
                 <v-col>
                     <v-sheet class="bottom-icon bg-text mt-16 mt-md-10" elevation="10"></v-sheet>
                 </v-col>
@@ -50,10 +46,12 @@
 
 <script>
 import HomeActionButton from '../../dedicated/home/HomeActionButton.vue'
+import LineSpacer from '../../global/LineSpacer.vue'
 
 export default {
     components: {
-        HomeActionButton
+        HomeActionButton,
+        LineSpacer
     }
 }
 </script>
@@ -61,6 +59,7 @@ export default {
 <style scoped>
 section {
     position: relative;
+    min-height: 100vh;
 }
 
 .background {

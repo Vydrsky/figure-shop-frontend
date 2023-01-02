@@ -1,7 +1,6 @@
 <template>
     <article>
-        <v-container>
-
+        <v-container class="pa-0">
             <v-row justify="center" class="text-body-1 text-text text-left">
                 <home-proof-text>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio pariatur illum
@@ -19,8 +18,12 @@
                     veniam tenetur dolorem aliquid rem.
                 </home-proof-text>
             </v-row>
-            <v-row justify="space-around" align="center" class="pa-0 py-md-5">
-                <home-associate-card></home-associate-card>
+            <v-row justify="center" class="pa-0 pt-md-5">
+                <v-col class="text-text text-center font-weight-black">
+                    NASI WSPÓŁPRACOWNICY
+                </v-col>
+            </v-row>
+            <v-row justify="center" align="center">
                 <home-associate-card></home-associate-card>
                 <home-associate-card></home-associate-card>
                 <home-associate-card></home-associate-card>
@@ -33,6 +36,7 @@
             <v-row class="mt-4 pa-5" justify="center">
                 <home-social-links :size="size"></home-social-links>
             </v-row>
+            <line-spacer></line-spacer>
         </v-container>
     </article>
 </template>
@@ -42,13 +46,15 @@ import HomeAssociateCard from '../../dedicated/home/HomeAssociateCard.vue'
 import HomeUserComment from '../../dedicated/home/HomeUserComment.vue'
 import HomeSocialLinks from '../../dedicated/home/HomeSocialLinks.vue'
 import HomeProofText from '../../dedicated/home/HomeProofText.vue'
+import LineSpacer from '../../global/LineSpacer.vue'
 
 export default {
     components: {
         HomeAssociateCard,
         HomeUserComment,
         HomeSocialLinks,
-        HomeProofText
+        HomeProofText,
+        LineSpacer
     },
     computed: {
         size() {
@@ -58,7 +64,8 @@ export default {
             else {
                 return 90;
             }
-        }
+        },
+
     }
 }
 

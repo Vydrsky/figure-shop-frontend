@@ -27,14 +27,20 @@ export default {
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .outline{
-    -webkit-text-stroke: 1px #76323F;
+    -webkit-text-stroke: 1px rgb(var(--v-theme-secondary));
 }
 
 .bordered{
-    border: 2px solid #76323F;
+    border: 2px solid rgb(var(--v-theme-secondary));
+}
+
+.vertical-bordered{
+    border-top: 2px solid rgb(var(--v-theme-secondary));
+    border-bottom: 2px solid rgb(var(--v-theme-secondary));
 }
 
 .line {

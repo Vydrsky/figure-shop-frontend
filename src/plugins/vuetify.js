@@ -25,6 +25,6 @@ export default createVuetify({
     defaultTheme: "mainTheme",
     themes: {
       mainTheme,
-    },
+    }
   },
 });

@@ -1,7 +1,4 @@
 <template>
-    <v-container>
-        <div class="line w-100 mb-12"></div>
-    </v-container>
     <v-parallax src="img/bg.jpg" height="500" cover class="d-flex align-center" gradient="rgba(0,0,0,.6), rgba(0,0,0,.6)">
         <div class="centered text-center ma-8 text-white font-weight-bold text-h4 ">Zapraszamy do zapoznania się
             z

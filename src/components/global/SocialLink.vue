@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="3" md="2" lg="1" class="d-flex justify-center align-center">
+    <v-col cols="3" md="2" lg="1" class="d-flex justify-center align-center mx-0 mx-md-8">
         <a :href="link" target="blank">
             <v-avatar :color="color" :size="size" rounded="lg" :class="type">
                 <v-icon :size="iconSize">{{ iconName }}</v-icon>

@@ -1,5 +1,5 @@
 <template>
-    <v-col cols="6" :md="size">
+    <v-col :cols="size">
         <v-card rounded="0" :elevation="12">
             <v-card-actions :class="setHeight">
                 <v-img :src="filePath" cover></v-img>
@@ -44,11 +44,11 @@ export default {
 }
 
 .high{
-    height:20vw;
+    height:30vh;
 }
 
 .low{
-    height: 45vw;
+    height: 20vh;
 }
 
 .v-img:hover {
