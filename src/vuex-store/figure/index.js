@@ -25,6 +25,33 @@ export default{
                     width: 150,
                     filePath: '/img/kropla.jpg'
                 },
+                {
+                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/logo.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/company.png'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
             ],
         }
     },

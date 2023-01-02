@@ -1,7 +1,10 @@
 <template>
-    <v-btn :link="link" :to="to" flat variant="text" class="outline text-text text-body-1 text-lg-h6 text-center" block rounded="0" :ripple='false'>
-        <slot></slot>
-    </v-btn>
+    <v-hover v-slot="{ isHovering, props }">
+        <v-btn :link="link" :to="to" flat class="text-text text-button text-lg-h6 text-center"
+            block :ripple='false' v-bind="props" :color="isHovering ? 'accent' : 'secondary'">
+            <slot></slot>
+        </v-btn>
+    </v-hover>
 </template>
 
 <script>

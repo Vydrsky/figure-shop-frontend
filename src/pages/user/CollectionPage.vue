@@ -1,25 +1,21 @@
 <template>
     <the-header></the-header>
-    <v-row justify="space-around" no-gutters>
-        <figure-card v-for="figure in figures" :key="figure.id" :figure="figure"></figure-card>
-    </v-row>
+    <collection-filter></collection-filter>
+    <collection-main></collection-main>
 </template>
 
 <script>
-import FigureCard from '../../components/dedicated/collection/CollectionFigureCard.vue'
 import TheHeader from '../../components/global/TheHeader.vue'
-import { mapGetters} from 'vuex'
+import CollectionMain from '../../components/page-components/collection/CollectionMain.vue'
+import CollectionFilter from '../../components/page-components/collection/CollectionFilter.vue'
 
 export default {
-    computed:{
-        ...mapGetters('figure',['figures']),
-    },
+
     components: {
-        FigureCard,
-        TheHeader
+        TheHeader,
+        CollectionMain,
+        CollectionFilter,
     },
-    created(){
-        this.$store.dispatch('figure/getAllFigures');
-    }
+
 }
 </script>

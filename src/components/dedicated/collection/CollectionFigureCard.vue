@@ -1,19 +1,11 @@
 <template>
-    <v-col cols="12" sm="8" md="5" lg="3" class=" mx-10 my-10">
-        <v-card rounded="lg" elevation="4" class="bg-secondary" block>
-            <v-card-title class="pa-0">
-                <v-img :src="figure.filePath" cover></v-img>
-            </v-card-title>
-            <v-card-text class="py-4">
-                <span class="text-accent">{{figure.name}}</span>
-                <div>
-                    <p>{{figure.name}}</p>
-                    <p>{{figure.material}}</p>
-                    <p>{{figure.description}}</p>
-                    <p>{{figure.height}}</p>
-                    <p>{{figure.width}}</p>
-                </div>
-            </v-card-text>
+    <v-col cols="6" md="4" lg="3" class="my-10">
+        <v-card rounded="md" class="bg-primary border" elevation="20" block>
+            <v-hover v-slot="{ isHovering, props }" v-model="hover">
+                <v-img :src="figure.filePath" cover :height="500" v-bind="props"
+                    :class="isHovering ? 'zoom-in' : ''"></v-img>
+            </v-hover>
+            <div v-if="hover" class="overlay">ahujifshgjf</div>
         </v-card>
     </v-col>
 </template>
@@ -21,21 +13,44 @@
 <script>
 
 export default {
-    props:{
-        figure:{
+    props: {
+        figure: {
             type: Object,
             required: true,
             default: null,
         }
     },
-    methods: {
-
+    data(){
+        return{
+            hover: false,
+        }
+    },
+    methods:{
+        logg(){
+            console.log(this.figure.name + " " + this.hover);
+        }
     }
 }
 </script>
 
 <style scoped>
-.v-btn::before {
-    opacity: 0 important !;
+.v-img {
+    transition: all 0.2s ease-out;
+}
+
+.zoom-in {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.v-card{
+    position: relative;
+    text-align: center;
+    
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
 }
 </style>

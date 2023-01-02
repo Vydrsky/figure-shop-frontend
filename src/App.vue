@@ -35,7 +35,7 @@ body {
 }
 
 .bordered{
-    border: 2px solid rgb(var(--v-theme-secondary));
+    border: 4px solid rgb(var(--v-theme-secondary));
 }
 
 .vertical-bordered{
