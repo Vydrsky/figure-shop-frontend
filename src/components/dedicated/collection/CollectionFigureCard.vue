@@ -4,8 +4,8 @@
             <v-hover v-slot="{ isHovering, props }" v-model="hover">
                 <v-img :src="figure.filePath" cover :height="500" v-bind="props"
                     :class="isHovering ? 'zoom-in' : ''"></v-img>
+                <div v-if="hover" class="overlay" v-bind="props">ahujifshgjf</div>
             </v-hover>
-            <div v-if="hover" class="overlay">ahujifshgjf</div>
         </v-card>
     </v-col>
 </template>
@@ -20,13 +20,13 @@ export default {
             default: null,
         }
     },
-    data(){
-        return{
+    data() {
+        return {
             hover: false,
         }
     },
-    methods:{
-        logg(){
+    methods: {
+        logg() {
             console.log(this.figure.name + " " + this.hover);
         }
     }
@@ -43,13 +43,13 @@ export default {
     filter: brightness(50%);
 }
 
-.v-card{
+.v-card {
     position: relative;
     text-align: center;
-    
+
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 50%;
 }
