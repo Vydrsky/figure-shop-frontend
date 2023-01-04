@@ -1,8 +1,10 @@
 <template>
-    <home-page-landing></home-page-landing>
-    <home-page-benefits></home-page-benefits>
-    <home-page-social-proof></home-page-social-proof>
-    <home-page-call-to-action></home-page-call-to-action>
+    <section>
+        <home-page-landing></home-page-landing>
+        <home-page-benefits></home-page-benefits>
+        <home-page-social-proof></home-page-social-proof>
+        <home-page-call-to-action></home-page-call-to-action>
+    </section>
 </template>
 
 <script>

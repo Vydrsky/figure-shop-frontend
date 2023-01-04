@@ -2,7 +2,7 @@
     <v-col :cols="size">
         <v-card rounded="0" :elevation="12">
             <v-card-actions :class="setHeight">
-                <v-img :src="filePath" cover></v-img>
+                <v-img eager :src="filePath" cover></v-img>
             </v-card-actions>
         </v-card>
     </v-col>

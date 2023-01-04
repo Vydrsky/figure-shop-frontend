@@ -8,7 +8,7 @@ export default{
         return{
             figures: [
                 {
-                    id: '34785623875340dgs-sdfasfasdf',
+                    id: '34785623875340dgs-sdf',
                     name: 'Pantera',
                     material: 'stal nierdzewna',
                     description: 'pantera wykonana ze stali nierdzewnej',
@@ -17,7 +17,7 @@ export default{
                     filePath: '/img/pantera.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    id: '245712fghfgh40dgs-fasasdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -26,7 +26,7 @@ export default{
                     filePath: '/img/kropla.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    id: '245712fghfgh40dgs-sdfasfadf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -35,7 +35,7 @@ export default{
                     filePath: '/img/logo.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    id: '245712fghfgh40dgs-sfasfasdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -44,7 +44,7 @@ export default{
                     filePath: '/img/company.png'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfasdf',
+                    id: '245712fghfgh40dgs-sdfasfsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',

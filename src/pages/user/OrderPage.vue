@@ -1,3 +1,3 @@
 <template>
-    <header>Order</header>
+    <div></div>
 </template>

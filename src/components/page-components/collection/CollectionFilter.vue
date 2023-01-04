@@ -1,5 +1,5 @@
 <template>
-    <v-container class="pa-12">
+    <v-container class="pa-4 pa-md-12">
         <v-row justify="center">
             <v-col cols="12" md="6">
             <v-text-field prepend-icon="mdi-magnify"></v-text-field>

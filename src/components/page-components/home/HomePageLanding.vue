@@ -5,7 +5,7 @@
             <v-row justify="center" class="pa-2">
                 <v-col cols="6" sm="4" lg="2" class="pa-8">
                     <v-card class="logo elevation-24">
-                        <v-img src="img/logo.jpg" class="logoimg"></v-img>
+                        <v-img eager src="img/logo.jpg" class="logoimg"></v-img>
                     </v-card>
                 </v-col>
             </v-row>
@@ -33,7 +33,7 @@
             <v-row justify="center" class="mt-16 mt-lg-16">
                 <home-action-button>Dowiedz się wiecej</home-action-button>
                 <v-col cols="0" lg="1"></v-col>
-                <home-action-button>Przejdź do strony</home-action-button>
+                <home-action-button link to="collection">Przejdź do strony</home-action-button>
             </v-row>
             <v-row align="end" class="mt-2 mt-lg-10 pa-2">
                 <v-col>

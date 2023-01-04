@@ -1,6 +1,5 @@
 <template>
     <v-carousel-item>
-
     </v-carousel-item>
 </template>
 
