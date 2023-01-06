@@ -1,16 +1,18 @@
 <template>
-    <v-col cols="6" md="4" lg="3" class="my-0 my-md-10">
+    <v-col cols="6" md="4" lg="3">
         <router-link :to="details">
             <v-card rounded="md" class="bg-primary border" elevation="20" block>
                 <v-hover v-slot="{ isHovering, props }" v-model="hover">
                     <v-img :src="figure.filePath" cover :height="size" v-bind="props"
-                        :class="isHovering ? 'zoom-in' : ''"></v-img>
-                    <div class="overlay w-100 h-100 text-h5" v-bind="props" v-if="hover">
-                        <div>
-                            <v-icon :size="size / 3">mdi-magnify</v-icon>
-                        </div>
-                        <div>
-                            {{ figure.name }}
+                        :class="isHovering ? 'zoom-in' : ''" eager></v-img>
+                    <div class="overlay w-100 h-100 text-h5 text-center" v-bind="props" v-if="hover">
+                        <div class="center-vertical">
+                            <div>
+                                <v-icon :size="size / 3">mdi-magnify</v-icon>
+                            </div>
+                            <div>
+                                {{ figure.name }}
+                            </div>
                         </div>
                     </div>
                 </v-hover>
@@ -44,7 +46,7 @@ export default {
             if (this.$vuetify.display.xs) {
                 return 150;
             }
-            else if (this.$vuetify.display.smAndDown) {
+            else if (this.$vuetify.display.lgAndDown) {
                 return 350;
             }
             else {
@@ -65,18 +67,21 @@ export default {
 
 .zoom-in {
     transform: scale(1.1);
-    filter: brightness(30%);
 }
 
 .v-card {
     position: relative;
     text-align: center;
-
 }
 
 .overlay {
+    transition: all 0.2s ease;
     position: absolute;
-    top: 25%;
-    bottom:25%;
+    top: 0%;
+}
+
+.overlay:hover {
+    filter: opacity(0.75);
+    background-color: rgb(var(--v-theme-accent));
 }
 </style>

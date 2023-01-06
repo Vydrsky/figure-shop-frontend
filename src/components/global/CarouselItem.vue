@@ -1,5 +1,5 @@
 <template>
-    <v-carousel-item>
+    <v-carousel-item eager>
     </v-carousel-item>
 </template>
 

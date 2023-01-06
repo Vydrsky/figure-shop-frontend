@@ -38,11 +38,11 @@ export default {
         routeTransitionControl() {
             return this.$router.options.history.state.back == '/home' ? 'home' : 'route';
         },
-        headerTransitionControl(){
-            return this.$router.options.history.state.back == '/home' ? 'header' : '';
+        headerTransitionControl() {
+            return 'header';
         }
     },
-    mounted(){
+    mounted() {
         this.show = true;
     }
 }
@@ -82,7 +82,12 @@ body {
 }
 
 .center-vertical {
-    margin: auto 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 a {
@@ -149,11 +154,11 @@ a {
 }
 
 .header-enter-active {
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .header-leave-active {
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .header-enter.to,

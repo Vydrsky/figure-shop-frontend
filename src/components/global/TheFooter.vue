@@ -9,7 +9,6 @@
                 </v-col>
                 <v-col cols="12" sm="6" md="2">
                     <v-icon>mdi-phone</v-icon>&emsp;+48 567 234 123<br>
-                    <v-icon>mdi-phone</v-icon>&emsp;+32 125 43 13<br>
                     <v-icon>mdi-email</v-icon>&emsp; email@gmail.com<br>
                 </v-col>
                 <v-spacer></v-spacer>

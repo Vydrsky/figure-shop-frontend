@@ -52,6 +52,60 @@ export default{
                     width: 150,
                     filePath: '/img/bird.jpg'
                 },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
+                {
+                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    name: 'Kropla',
+                    material: 'aluminium',
+                    description: 'amelinowa kropla wody',
+                    height: 50,
+                    width: 150,
+                    filePath: '/img/bird.jpg'
+                },
             ],
         }
     },

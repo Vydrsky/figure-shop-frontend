@@ -1,6 +1,6 @@
 <template>
-    <header class="py-2 mb-0 mb-sm-12 bg-secondary" md="5">
-        <v-row justify="center" align="center">
+    <header class="py-2">
+        <v-row justify="center" align="center" class=" bg-secondary">
             <v-col cols="4" md="5">
                 <v-row justify="end">
                     <v-col cols="12" sm="6" lg="3">
@@ -29,7 +29,6 @@
                 </v-row>
             </v-col>
         </v-row>
-        <div class="pa-12"></div>
     </header>
 </template>
 
@@ -53,5 +52,4 @@ export default {
 .v-img {
     border-radius: 10px;
 }
-
 </style>

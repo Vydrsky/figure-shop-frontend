@@ -1,5 +1,6 @@
 <template>
-    <v-parallax src="img/bg.jpg" height="500" cover class="d-flex align-center" gradient="rgba(0,0,0,.6), rgba(0,0,0,.6)">
+    <v-parallax height="500" cover class="d-flex align-center container">
+        <v-img src="img/bg.jpg" class="background" cover gradient="rgba(0,0,0,.5), rgba(0,0,0,.5)" eager></v-img>
         <div class="centered text-center ma-8 text-white font-weight-bold text-h4 ">Zapraszamy do zapoznania się
             z
             aktualną
@@ -21,3 +22,18 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.container {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+</style>
