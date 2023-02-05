@@ -44,7 +44,7 @@ export default{
                     filePath: '/img/company.png'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '245712fghfgh40dgs-sdsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -53,7 +53,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '245712fghfgh40dgs-sdffsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -62,7 +62,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '245712fghfgh40dgs-sdfaf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -71,7 +71,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '245712fggh40dgs-sdsfsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -80,7 +80,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '245712fghfghdfasfsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -89,7 +89,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '2712fghf40dgs-sdfasfsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',
@@ -98,7 +98,7 @@ export default{
                     filePath: '/img/bird.jpg'
                 },
                 {
-                    id: '245712fghfgh40dgs-sdfasfsdf',
+                    id: '24571h40dgs-sdfasfsdf',
                     name: 'Kropla',
                     material: 'aluminium',
                     description: 'amelinowa kropla wody',

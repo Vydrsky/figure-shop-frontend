@@ -1,8 +1,8 @@
 <template>
-    <header class="py-2">
-        <v-row justify="center" align="center" class=" bg-secondary">
-            <v-col cols="4" md="5">
-                <v-row justify="end">
+    <header>
+        <v-row justify="center" :align="'start'" class=" bg-secondary">
+            <v-col cols="4" md="5" class="pt-10">
+                <v-row justify="start">
                     <v-col cols="12" sm="6" lg="3">
                         <header-button link to="collection">Kolekcja</header-button>
                     </v-col>
@@ -12,14 +12,12 @@
                 </v-row>
             </v-col>
             <v-col cols="4" sm="3" md="2" lg="1">
-                <div class="logo">
-                    <router-link to="home">
-                        <v-img eager src="/img/logo.jpg"></v-img>
-                    </router-link>
-                </div>
+                <router-link to="home">
+                    <v-img eager src="/img/logo.jpg"></v-img>
+                </router-link>
             </v-col>
-            <v-col cols="4" md="5">
-                <v-row justify="start">
+            <v-col cols="4" md="5" class="pt-10">
+                <v-row justify="end" >
                     <v-col cols="12" sm="6" lg="3">
                         <header-button link to="contact">Kontakt</header-button>
                     </v-col>
@@ -29,6 +27,7 @@
                 </v-row>
             </v-col>
         </v-row>
+        <div class="header-background"></div>
     </header>
 </template>
 
@@ -43,13 +42,12 @@ export default {
 </script>
 
 <style scoped>
-.logo {
-    position: relative;
-    top: 30px;
+.header-nav {
     max-height: 100px;
 }
 
-.v-img {
-    border-radius: 10px;
+.header-background {
+    height: 25rem;
+    background-color: rgb(var(--v-theme-secondary));
 }
 </style>

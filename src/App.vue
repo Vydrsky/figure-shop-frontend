@@ -4,7 +4,7 @@
             <transition :name="headerTransitionControl()" mode="out-in">
                 <the-header v-if="!isHomeRoute"></the-header>
             </transition>
-            <router-view v-slot="slotProps">
+            <router-view v-slot="slotProps" :class="!isHomeRoute ? 'content' : ''">
                 <transition :name="routeTransitionControl()" mode="out-in">
                     <component :is="slotProps.Component"></component>
                 </transition>
@@ -82,12 +82,12 @@ body {
 }
 
 .center-vertical {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: auto auto;
+}
+
+.content{
+    position:relative;
+    top: -20rem;
 }
 
 a {
