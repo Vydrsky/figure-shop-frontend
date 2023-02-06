@@ -1,6 +1,6 @@
 <template>
     <section class="bg-secondary">
-        <v-container class="pa-12">
+        <v-container class="pa-12 mt-12">
             <v-row justify="center" class="text-start py-8">
                 <v-col cols="12" sm="9" md="12" lg="6">
                     <p class="text-h5 text-md-h4">Skontaktuj się z Nami:</p>

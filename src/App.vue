@@ -4,7 +4,7 @@
             <transition :name="headerTransitionControl()" mode="out-in">
                 <the-header v-if="!isHomeRoute"></the-header>
             </transition>
-            <router-view v-slot="slotProps" :class="!isHomeRoute ? 'content' : ''">
+            <router-view v-slot="slotProps">
                 <transition :name="routeTransitionControl()" mode="out-in">
                     <component :is="slotProps.Component"></component>
                 </transition>
@@ -85,9 +85,8 @@ body {
     margin: auto auto;
 }
 
-.content{
-    position:relative;
-    top: -20rem;
+.page-desc{
+    height: 25rem;
 }
 
 a {

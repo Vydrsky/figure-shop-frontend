@@ -1,21 +1,18 @@
 <template>
-    <v-col cols="6" md="4" lg="3">
+    <v-col cols="12" sm="6"  md="6" lg="4" xl="3">
         <v-card rounded="md" class="bg-primary accent-border" elevation="20" block>
             <v-hover v-slot="{ isHovering, props }" v-model="hover">
                 <v-img :src="figure.filePath" cover :height="size" v-bind="props" :class="isHovering ? 'zoom-in' : ''"
                     eager></v-img>
-                <transition name="overlay" mode="out-in" @after-enter="setContent(true)" @before-leave="setContent(false)">
+                <transition name="overlay" @after-enter="setContent(true)" @before-leave="setContent(false)">
                     <div v-if="hover" class="overlay w-100 h-100" v-bind="props">
-                        <transition name="details" mode="out-in" >
-                            <div v-if="showContent" class="d-flex flex-column align-center text-white justify-center h-100">
-                                <div class="d-flex justify-center align-center py-3">
-                                    <v-icon :size="size / 8">mdi-text-box-multiple</v-icon>
-                                    <p class="text-body-1 pa-2">Wyświetl szczegóły</p>
-                                </div>
-                                <div class="d-flex justify-center align-center py-3">
-                                    <v-icon :size="size / 8">mdi-magnify</v-icon>
-                                    <p class="text-body-1 pa-2">Powiększ</p>
-                                </div>
+                        <transition name="details">
+                            <div v-if="showContent"
+                                class="d-flex flex-column align-center text-white justify-center h-100">
+                                <collection-figure-card-button :size="size / 8" icon='mdi-text-box-multiple'
+                                    text="Wyświetl Szczegóły" :link="details"></collection-figure-card-button>
+                                <collection-figure-card-button v-if="$vuetify.display.mdAndUp" :size="size / 8" icon="mdi-magnify"
+                                    text="Powiększ" :link="picture"></collection-figure-card-button>
                             </div>
                         </transition>
                     </div>
@@ -26,10 +23,12 @@
 </template>
 
 <script>
-
-
+import CollectionFigureCardButton from './CollectionFigureCardButton.vue'
 
 export default {
+    components: {
+        CollectionFigureCardButton
+    },
     props: {
         figure: {
             type: Object,
@@ -44,17 +43,17 @@ export default {
         }
     },
     methods: {
-        setContent(value){
+        setContent(value) {
             this.showContent = value;
         }
     },
     computed: {
         size() {
             if (this.$vuetify.display.xs) {
-                return 150;
+                return 400;
             }
             else if (this.$vuetify.display.lgAndDown) {
-                return 350;
+                return 450;
             }
             else {
                 return 500;
@@ -62,6 +61,9 @@ export default {
         },
         details() {
             return this.$route.path + '/details/' + this.figure.id;
+        },
+        picture() {
+            return this.$route.path + '/picture/' + this.figure.id
         }
     }
 }
@@ -83,7 +85,7 @@ export default {
 }
 
 .overlay:hover {
-    background-color: rgb(var(--v-theme-accent),0.2);
+    background-color: rgb(var(--v-theme-accent), 0.2);
 }
 
 .details-enter-from,
@@ -98,7 +100,7 @@ export default {
 
 .details-enter-active,
 .details-leave-active {
-    transition: transform 0.2s ease
+    transition: transform 0.1s ease
 }
 
 .overlay-enter-from,
@@ -113,6 +115,6 @@ export default {
 
 .overlay-enter-active,
 .overlay-leave-active {
-    transition: all 0.2s ease
+    transition: opacity 0.1s ease
 }
 </style>

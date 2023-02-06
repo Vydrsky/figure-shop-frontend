@@ -1,8 +1,8 @@
 <template>
     <v-col cols="12" lg="6" class="py-12">
         <v-row justify="center" :dense="isMobile" class="pa-0 pa-lg-4">
-            <home-gallery-item filePath="/img/bird.jpg" :size="4"></home-gallery-item>
-            <home-gallery-item filePath="/img/pantera.jpg" :size="8"></home-gallery-item>
+            <home-gallery-item filePath="/img/bird.jpg" :size="6"></home-gallery-item>
+            <home-gallery-item filePath="/img/pantera.jpg" :size="6"></home-gallery-item>
             <home-gallery-item filePath="/img/kropla.jpg" :size="7"></home-gallery-item>
             <home-gallery-item filePath="/img/kropla.jpg" :size="5"></home-gallery-item>
             <home-gallery-item filePath="/img/logo.jpg" :size="5"></home-gallery-item>

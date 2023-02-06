@@ -44,11 +44,11 @@ export default {
 }
 
 .high{
-    height:30vh;
+    height:31vh;
 }
 
 .low{
-    height: 20vh;
+    height: 30vh;
 }
 
 .v-img:hover {

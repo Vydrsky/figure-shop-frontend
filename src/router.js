@@ -7,6 +7,7 @@ import OrderPage from "./pages/user/OrderPage.vue";
 import AboutPage from "./pages/user/AboutPage.vue";
 import AdminMainPage from "./pages/admin/AdminMainPage.vue";
 import DetailsPage from "./pages/user/DetailsPage.vue";
+import PicturePage from "./pages/user/PicturePage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -31,6 +32,12 @@ const router = createRouter({
           component: DetailsPage,
           props: true,
         },
+        {
+          path: "picture/:id",
+          name: "picture",
+          component: PicturePage,
+          props: true,
+        }
       ],
     },
     {
@@ -60,12 +67,8 @@ const router = createRouter({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    // always scroll to top
-    if (savedPosition) {
+    if(from.name == "collection" || to.name =="collection"){
       return savedPosition;
-    } 
-    else if(to.name == 'details' || from.name == 'details'){
-        return savedPosition;
     }
     else {
       return { top: 0 };
