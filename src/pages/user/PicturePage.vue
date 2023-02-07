@@ -1,5 +1,5 @@
 <template>
-    <v-dialog activator="parent" v-model="active" transition="dialog-bottom-transition">
+    <v-dialog activator="parent" v-model="active" transition="dialog-bottom-transition" no-click-animation persistent>
         <v-container :class="width">
             <v-row justify=center>
                 <v-col class="pa-4 bg-secondary">
@@ -20,14 +20,16 @@ export default {
     data() {
         return {
             active: false,
-            image: ''
         }
     },
     computed: {
         ...mapGetters('figure', ['figures']),
-        width() {
+        width(){
             if (this.$vuetify.display.smAndDown) return 'w-100'
             else return 'w-50';
+        },
+        image(){
+            return this.$route.query.image;
         }
     },
     watch: {
@@ -39,9 +41,6 @@ export default {
             }
         }
     },
-    created() {
-        this.image = this.figures.find(figure => figure.id === this.$route.params.id).filePath;
-    }
 }
 </script>
 

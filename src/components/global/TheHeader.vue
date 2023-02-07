@@ -1,6 +1,6 @@
 <template>
     <header class="parent">
-        <v-row justify="center" :align="'start'" class=" bg-secondary">
+        <v-row justify="center" :align="'start'" class="bg-secondary header-nav">
             <v-col cols="4" md="5" class="pt-10">
                 <v-row justify="start">
                     <v-col cols="12" sm="6" lg="3">
@@ -11,7 +11,7 @@
                     </v-col>
                 </v-row>
             </v-col>
-            <v-col cols="4" sm="3" md="2" lg="1">
+            <v-col cols="3" sm="2" md="2" lg="1">
                 <router-link to="home" class="logo">
                     <v-img eager src="/img/logo.jpg"></v-img>
                 </router-link>
@@ -43,14 +43,14 @@ export default {
 
 <style scoped>
 .header-nav {
-    max-height: 100px;
+    height: 10rem;
 }
 
 .header-background {
-    height: 25rem;
+    height: 30rem;
     background-color: rgb(var(--v-theme-secondary));
     position: absolute;
-    top: 100px;
+    top:10rem;
     left:0px;
     width: 100%;
     z-index: -1;

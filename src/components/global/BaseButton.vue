@@ -1,5 +1,5 @@
 <template>
-    <v-btn @click="submit()" :color="color">
+    <v-btn @click="submit()" :color="color" block>
         {{ title }}
     </v-btn>
 </template>

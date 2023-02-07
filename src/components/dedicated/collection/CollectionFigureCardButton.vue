@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex justify-center align-center py-3">
+    <div class="d-flex justify-center align-center my-3">
         <v-btn :prepend-icon="icon" color="secondary" rounded="0" :to="link">{{ text }}</v-btn>
     </div>
 </template>

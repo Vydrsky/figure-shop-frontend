@@ -1,7 +1,8 @@
 <template>
     <section>
         <v-parallax scale="0.5" class="background">
-            <v-img src="img/bg.jpg" height="100%" :eager="true" gradient="rgba(0,0,0,0.5), rgba(0,0,0,0.5)" cover></v-img>
+            <v-img src="img/bg.jpg" height="100%" :eager="true" gradient="rgba(0,0,0,0.5), rgba(0,0,0,0.5)"
+                cover></v-img>
         </v-parallax>
         <v-container>
             <v-row justify="center" class="pa-2">
@@ -82,7 +83,11 @@ section {
     height: 10px;
     border: 2px solid #f5f5f5;
     border-radius: 5px;
-    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right:0;
+    bottom: 20px;
 }
-
 </style>

@@ -86,7 +86,7 @@ body {
 }
 
 .page-desc{
-    height: 25rem;
+    height: 30rem;
 }
 
 a {
@@ -112,7 +112,7 @@ a {
     transition: all 0.2s ease;
 }
 
-.route-enter.to,
+.route-enter-to,
 .route.leave-from {
     opacity: 1;
     transform: translateX(0px);
@@ -136,7 +136,7 @@ a {
     transition: all 0.2s ease;
 }
 
-.home-enter.to,
+.home-enter-to,
 .home.leave-from {
     opacity: 1;
     transform: translateY(0px);

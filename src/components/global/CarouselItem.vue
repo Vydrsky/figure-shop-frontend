@@ -1,5 +1,5 @@
 <template>
-    <v-carousel-item eager>
+    <v-carousel-item cover :src="src">
     </v-carousel-item>
 </template>
 

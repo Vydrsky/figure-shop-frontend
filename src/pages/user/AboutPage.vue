@@ -1,16 +1,18 @@
 <template>
     <article class="my-0">
-        <div class="pa-12 bg-secondary"></div>
+        <about-summary></about-summary>
         <about-section></about-section>
     </article>
 </template>
 
 <script>
-import AboutSection from "../../components/dedicated/about/AboutSection.vue";
+import AboutSection from "../../components/page-components/about/AboutSection.vue";
+import AboutSummary from "../../components/page-components/about/AboutSummary.vue";
 
 export default {
     components: {
         AboutSection,
+        AboutSummary
     }
 }
 </script>

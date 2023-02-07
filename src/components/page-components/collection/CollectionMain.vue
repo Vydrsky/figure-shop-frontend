@@ -1,7 +1,7 @@
 <template>
     <main class="bg-secondary">
-        <v-img class="parallax border" src="img/bg2.jpg" cover>
-            <v-container>
+        <v-img class="parallax border" src="/img/bg.jpg" cover gradient="rgba(255,255,255,0.2),rgba(0,0,0,0.2)">
+            <v-container :class="width">
                 <v-pagination :length="length" :total-visible="6" active-color="accent" v-model="page"
                     class="my-8"></v-pagination>
                 <v-row justify="center" class=" pa-md-8">
@@ -46,11 +46,15 @@ export default {
         },
         length(){
             return Math.ceil(this.figures.length / this.pageSize);
+        },
+        width(){
+            if(this.$vuetify.display.mdAndDown) return 'w-100';
+            else return 'w-75';
         }
     },
     created() {
         this.$store.dispatch('figure/getAllFigures');
-    }
+    },
 }
 </script>
 
