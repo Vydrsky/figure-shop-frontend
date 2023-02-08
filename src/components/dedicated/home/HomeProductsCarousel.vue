@@ -1,8 +1,8 @@
 <template>
-    <v-col cols="12" md="6" class="pa-0 pa-lg-8 ma-0 d-none d-lg-block">
+    <v-col cols="12" lg="6" class="pa-0 pa-lg-8 ma-0 d-none d-lg-block">
         <v-sheet elevation="24" class="pa-8 border bg-secondary">
-            <v-carousel show-arrows="hover" cycle interval="4000" height="900" color="accent">
-                <carousel-item v-for="source in 5" :key="source" :src="'/img/pantera.jpg'">
+            <v-carousel cycle interval="4000" height="800" color="accent" :show-arrows="false" hide-delimiters>
+                <carousel-item v-for="source,index in gallery" :key="source" :src="gallery[index]">
                 </carousel-item>
             </v-carousel>
         </v-sheet>
@@ -17,11 +17,21 @@ export default {
     components: {
         CarouselItem
     },
+    data(){
+        return{
+            gallery: []
+        }
+    },
     methods: {
         placeholder() {
             return 'https://picsum.photos/1000/1000?' + Date.now() + Math.random();
         }
 
     },
+    created(){
+        for(let i=0;i<5;i++){
+            this.gallery[i] = this.placeholder();
+        }
+    }
 }
 </script>

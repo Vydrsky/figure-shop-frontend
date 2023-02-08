@@ -1,7 +1,19 @@
 <template>
     <article>
-        <v-container class="pa-0">
-            <v-row justify="center" class="text-body-1 text-text text-left">
+        <v-container class="my-12">
+            <line-spacer></line-spacer>
+            <v-row justify="center">
+                <v-col class="text-text text-center font-weight-black">
+                    NASI WSPÓŁPRACOWNICY
+                </v-col>
+            </v-row>
+            <v-row justify="center" align="center" class="mb-12">
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+                <home-associate-card></home-associate-card>
+            </v-row>
+            <v-row justify="center" class="text-body-1 text-text text-left my-8">
                 <home-proof-text>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit distinctio pariatur illum
                     perspiciatis repellendus eveniet facilis tempora, rerum nostrum numquam cum voluptatum
@@ -18,22 +30,11 @@
                     veniam tenetur dolorem aliquid rem.
                 </home-proof-text>
             </v-row>
-            <v-row justify="center" class="pa-0 pt-md-5">
-                <v-col class="text-text text-center font-weight-black">
-                    NASI WSPÓŁPRACOWNICY
-                </v-col>
-            </v-row>
-            <v-row justify="center" align="center">
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-                <home-associate-card></home-associate-card>
-            </v-row>
-            <v-row justify="center" class="mt-12 pa-0 py-md-5">
+            <v-row justify="center" class="my-8">
                 <home-user-comment></home-user-comment>
                 <home-user-comment></home-user-comment>
             </v-row>
-            <v-row class="mt-4 pa-5" justify="center">
+            <v-row class="my-8" justify="center">
                 <home-social-links :size="size"></home-social-links>
             </v-row>
             <line-spacer></line-spacer>

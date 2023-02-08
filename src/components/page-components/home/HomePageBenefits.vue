@@ -26,29 +26,24 @@
             </v-row>
         </v-container>
     </div>
-    <div class="bg-secondary">
-        <v-container>
-            <v-row align="center">
-                <home-products-carousel></home-products-carousel>
-                <home-gallery></home-gallery>
-            </v-row>
-        </v-container>
+    <div class="bg-secondary pa-8">
+        <v-row align="center">
+            <home-products-carousel></home-products-carousel>
+            <home-gallery></home-gallery>
+        </v-row>
     </div>
-    <line-spacer></line-spacer>
 </template>
 
 <script>
 import HomeProductsCarousel from '../../dedicated/home/HomeProductsCarousel.vue'
 import HomeBenefitsCard from '../../dedicated/home/HomeBenefitsCard.vue'
 import HomeGallery from '../../dedicated/home/HomeGallery.vue'
-import LineSpacer from '../../global/LineSpacer.vue'
 
 export default {
     components: {
         HomeProductsCarousel,
         HomeBenefitsCard,
         HomeGallery,
-        LineSpacer
     }
 }
 </script>

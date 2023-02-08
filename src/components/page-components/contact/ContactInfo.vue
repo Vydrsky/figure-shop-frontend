@@ -1,12 +1,12 @@
 <template>
-    <section class="bg-secondary">
-        <v-container class="pa-12 mt-12">
-            <v-row justify="center" class="text-start py-8">
+    <section class="">
+        <v-container class="pa-12">
+            <v-row justify="center" class="text-start py-0 py-md-8">
                 <v-col cols="12" sm="9" md="12" lg="6">
                     <p class="text-h5 text-md-h3">Skontaktuj się z Nami:</p>
                 </v-col>
             </v-row>
-            <v-row justify="center" class="py-8 text-h6">
+            <v-row justify="center" class="text-h6">
                 <v-col cols="12" sm="9" md="6" lg="3" class="text-start">
                     <div class="d-flex align-center">
                         <v-icon start :size="45">mdi-phone</v-icon>
@@ -33,7 +33,7 @@
             </v-row>
         </v-container>
     </section>
-    <v-container class="pa-4 pa-md-12">
+    <v-container class="pa-4 pa-md-12 mt-8">
         <div class="text-center centered text-h6 text-md-h5 pa-4 pa-md-12">
             <p>W przypadku gdy posiadasz dodatkowe pytania. Prosimy o wypełnienie oraz wysłanie poniższego
                 formularza.</p>

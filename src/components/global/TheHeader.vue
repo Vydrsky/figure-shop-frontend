@@ -17,7 +17,7 @@
                 </router-link>
             </v-col>
             <v-col cols="4" md="5" class="pt-10">
-                <v-row justify="end" >
+                <v-row justify="end">
                     <v-col cols="12" sm="6" lg="3">
                         <header-button link to="contact">KONTAKT</header-button>
                     </v-col>
@@ -50,18 +50,20 @@ export default {
     height: 30rem;
     background-color: rgb(var(--v-theme-secondary));
     position: absolute;
-    top:10rem;
-    left:0px;
+    top: 10rem;
+    left: 0px;
     width: 100%;
     z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%);
 }
 
-.logo{
+.logo {
     position: relative;
     top: 30px;
 }
 
-.parent{
+.parent {
     position: relative;
 }
 </style>

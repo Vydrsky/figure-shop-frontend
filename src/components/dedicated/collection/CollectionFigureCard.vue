@@ -9,12 +9,11 @@
                                 <transition name="details" appear>
                                     <div v-if="isHovering"
                                         class="d-flex flex-column align-center text-white justify-center h-100">
-                                        <collection-figure-card-button @click="showContent = false;" :size="size / 8"
-                                            icon='mdi-text-box-multiple' text="Wyświetl Szczegóły"
-                                            :link="details"></collection-figure-card-button>
-                                        <collection-figure-card-button @click="showContent = false;"
-                                            v-if="$vuetify.display.mdAndUp" :size="size / 8" icon="mdi-magnify"
-                                            text="Powiększ" :link="picture"></collection-figure-card-button>
+                                        <collection-figure-card-button :size="size / 8" icon='mdi-text-box-multiple'
+                                            text="Wyświetl Szczegóły" :link="details"></collection-figure-card-button>
+                                        <collection-figure-card-button v-if="$vuetify.display.mdAndUp" :size="size / 8"
+                                            icon="mdi-magnify" text="Powiększ"
+                                            :link="picture"></collection-figure-card-button>
                                     </div>
                                 </transition>
                             </div>
@@ -43,7 +42,6 @@ export default {
     data() {
         return {
             hover: false,
-            showContent: false,
         }
     },
     methods: {

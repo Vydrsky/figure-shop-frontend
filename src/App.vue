@@ -36,7 +36,9 @@ export default {
     },
     methods: {
         routeTransitionControl() {
-            return this.$router.options.history.state.back == '/home' ? 'home' : 'route';
+            if(this.$router.options.history.state.back === '/home' || this.isHomeRoute) return 'home';
+            else return 'route';
+            //return this.$router.options.history.state.back == '/home' ? 'home' : 'route';
         },
         headerTransitionControl() {
             return 'header';
@@ -60,9 +62,6 @@ body {
     overflow: hidden;
 }
 
-.outline {
-    -webkit-text-stroke: 1px rgb(var(--v-theme-secondary));
-}
 
 .bordered {
     border: 4px solid rgb(var(--v-theme-secondary));
@@ -95,13 +94,11 @@ a {
 }
 
 .route-enter-from {
-    opacity: 0;
-    transform: translateX(-30%);
+    transform: translateX(-100%);
 }
 
 .route-leave-to {
-    opacity: 0;
-    transform: translateX(30%);
+    transform: translateX(100%);
 }
 
 .route-enter-active {
@@ -120,12 +117,12 @@ a {
 
 .home-enter-from {
     opacity: 0;
-    transform: translateY(-30%);
+    transform: translateY(-50%);
 }
 
 .home-leave-to {
     opacity: 0;
-    transform: translateY(30%);
+    transform: translateY(50%);
 }
 
 .home-enter-active {
