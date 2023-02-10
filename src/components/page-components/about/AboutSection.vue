@@ -1,8 +1,8 @@
 <template>
     <section>
         <v-row no-gutters justify="center" align="center">
-            <v-col cols="12" sm="10" md="8" lg="6" class="about-content">
-                <v-img src="/img/tw.jpg" cover></v-img>
+            <v-col cols="12" sm="10" md="8" lg="6">
+                <v-img src="/img/tw.jpg" cover transition="none" ref="img"></v-img>
             </v-col>
         </v-row>
         <v-row no-gutters justify="center" align="center">

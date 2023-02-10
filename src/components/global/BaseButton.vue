@@ -1,5 +1,5 @@
 <template>
-    <v-btn @click="submit()" :color="color" block>
+    <v-btn :color="color" :type="setType" block>
         {{ title }}
     </v-btn>
 </template>
@@ -21,11 +21,12 @@ export default{
             default: 'red'
         }
     },
-    methods:{
-        submit(){
+    computed:{
+        setType(){
             if(this.isSubmit){
-                this.$emit('submit');
+                return 'submit'
             }
+            else return 'button'
         }
     }
 }
