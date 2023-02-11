@@ -6,9 +6,9 @@
             aktualną
             ofertą</div>
         <v-row justify="center" class="pa-0 pa-md-12">
-            <home-action-button>Przejrzyj kolekcję</home-action-button>
+            <home-action-button link to="collection">Przejrzyj kolekcję</home-action-button>
             <v-col cols="0" sm="1"></v-col>
-            <home-action-button>Złóź zamówienie</home-action-button>
+            <home-action-button link to="order">Złóź zamówienie</home-action-button>
         </v-row>
     </v-parallax>
 </template>

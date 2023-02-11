@@ -12,7 +12,7 @@
                 <p class="text-subtitle-1 font-weight-bold">
                     Proszę podać pożądaną szerokość oraz wysokość rzeźby:
                 </p>
-                <v-row justify="start" align="start">
+                <v-row justify="start" align="start" class="my-4">
                     <v-col cols="6" md="4" lg="3" xl="2">
                         <form-control title="Szerokość: [cm]" suffix="cm"  required></form-control>
                     </v-col>

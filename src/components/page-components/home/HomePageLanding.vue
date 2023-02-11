@@ -34,7 +34,7 @@
             </v-row>
             <line-spacer></line-spacer>
             <v-row justify="center" class="mt-16 mt-lg-16">
-                <home-action-button>Dowiedz się wiecej</home-action-button>
+                <home-action-button @click="goto">Dowiedz się wiecej</home-action-button>
                 <v-col cols="0" lg="1"></v-col>
                 <home-action-button link to="collection">Przejdź do strony</home-action-button>
             </v-row>
@@ -55,7 +55,12 @@ export default {
     components: {
         HomeActionButton,
         LineSpacer
-    }
+    },
+    methods: {
+        goto() {
+            document.getElementById('content').scrollIntoView({behavior: "smooth"});
+        }
+    },
 }
 </script>
 
@@ -87,7 +92,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right:0;
+    right: 0;
     bottom: 10px;
 }
 </style>

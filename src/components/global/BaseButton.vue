@@ -1,5 +1,5 @@
 <template>
-    <v-btn :color="color" :type="setType" block>
+    <v-btn :color="color" :type="setType" :block="block">
         {{ title }}
     </v-btn>
 </template>
@@ -19,6 +19,11 @@ export default{
         color:{
             type: String,
             default: 'red'
+        },
+        block:{
+            type: Boolean,
+            default: true,
+            required: false
         }
     },
     computed:{

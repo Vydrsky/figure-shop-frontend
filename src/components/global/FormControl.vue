@@ -1,10 +1,10 @@
 <template>
-    <div class="my-2">
+    <div>
         <p class="text-subtitle-1 font-weight-bold">
             {{ title }}
         </p>
         <v-text-field v-if="inputType === 'textfield'" :rules="[isRequired, isEmail, isPhone]"
-            :suffix="suffix"></v-text-field>
+            :suffix="suffix" :type="type" :variant="variant"></v-text-field>
         <v-textarea v-if="inputType === 'textarea'" :rows="rows" :rules="[isRequired, isEmail, isPhone]"></v-textarea>
         <v-radio-group v-if="inputType === 'radio'" v-model="radioGroup" :mandatory="required">
             <v-radio v-for="radio in dataArray.length" :key="radio" :label="dataArray[radio - 1]"
@@ -50,8 +50,16 @@ export default {
         },
         suffix: {
             type: String,
-            edfault: '',
+            default: '',
             required: false
+        },
+        type:{
+            type: String,
+            default: 'text'
+        },
+        variant:{
+            type:String,
+            default: 'filled'
         }
     },
     data() {

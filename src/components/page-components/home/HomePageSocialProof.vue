@@ -1,6 +1,6 @@
 <template>
     <article>
-        <v-container class="my-12">
+        <v-container class="my-12" id="content">
             <line-spacer></line-spacer>
             <v-row justify="center">
                 <v-col class="text-text text-center font-weight-black">

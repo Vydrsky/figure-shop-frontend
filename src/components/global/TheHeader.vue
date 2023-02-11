@@ -27,7 +27,9 @@
                 </v-row>
             </v-col>
         </v-row>
-        <div class="header-background"></div>
+        <div class="header-background d-flex">
+            <v-img cover src="/img/bg3.jpg" class="backdrop"></v-img>
+        </div>
     </header>
 </template>
 
@@ -48,7 +50,6 @@ export default {
 
 .header-background {
     height: 30rem;
-    background-color: rgb(var(--v-theme-secondary));
     position: absolute;
     top: 10rem;
     left: 0px;
@@ -65,5 +66,9 @@ export default {
 
 .parent {
     position: relative;
+}
+
+.backdrop{
+    filter:brightness(0.3);
 }
 </style>
