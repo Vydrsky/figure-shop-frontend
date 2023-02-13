@@ -33,14 +33,14 @@
                     </v-row>
                 </v-col>
             </v-row>
-            <div class="d-flex align-center login">
+            <div v-if="!loggedIn" class="d-flex align-center login">
                 <v-icon size="30" @click="switchLogin()">mdi-account</v-icon>
                 <transition name="login">
-                    <form-control v-if="login" title="" type="password" variant="underlined" class="px-4"
+                    <form-control v-if="showLogin" title="" type="password" variant="underlined" class="px-4"
                         :class="isMobile ? 'w-100' : 'w-50'"></form-control>
                 </transition>
                 <transition name="fade">
-                    <base-button v-if="login" :block="false" color="accent" rounded="0" title="Potwierdź"></base-button>
+                    <base-button v-if="showLogin" :block="false" color="accent" rounded="0" title="Potwierdź" @click="adminLogin()"></base-button>
                 </transition>
             </div>
             <v-row class="mt-4 text-white bg-secondary" justify="center">
@@ -55,6 +55,7 @@
 <script>
 import FormControl from '../global/FormControl.vue'
 import BaseButton from '../global/BaseButton.vue'
+import { mapGetters } from 'vuex';
 
 export default {
     components: {
@@ -63,18 +64,22 @@ export default {
     },
     data() {
         return {
-            login: false,
+            showLogin: false,
         }
     },
     methods: {
         switchLogin() {
-            this.login = !this.login;
+            this.showLogin = !this.showLogin;
+        },
+        async adminLogin(){
+            await this.$store.dispatch("auth/login");
         }
     },
     computed: {
+        ...mapGetters('auth',['loggedIn']),
         isMobile() {
             return this.$vuetify.display.xs
-        }
+        },
     }
 }
 </script>

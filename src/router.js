@@ -67,7 +67,7 @@ const router = createRouter({
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    if(from.name === "collection" || (to.name === "collection" && from.name ==="picture")){
+    if(from.name === "collection" || (to.name === "collection" && from.name ==="picture") || (to.name === "collection" && from.name ==="details")){
       return savedPosition;
     }
     else {

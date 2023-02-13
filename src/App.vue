@@ -1,5 +1,6 @@
 <template>
     <v-app>
+        <the-nav></the-nav>
         <v-main class="bg-primary">
             <transition :name="headerTransitionControl()" mode="out-in">
                 <the-header v-if="!isHomeRoute"></the-header>
@@ -9,19 +10,21 @@
                     <component :is="slotProps.Component"></component>
                 </transition>
             </router-view>
+            <the-footer></the-footer>
         </v-main>
-        <the-footer></the-footer>
     </v-app>
 </template>
 
 <script>
 import TheFooter from './components/global/TheFooter.vue'
 import TheHeader from './components/global/TheHeader.vue'
+import TheNav from './components/global/TheNav.vue'
 
 export default {
     components: {
         TheFooter,
-        TheHeader
+        TheHeader,
+        TheNav
     },
     data() {
         return {
@@ -36,9 +39,8 @@ export default {
     },
     methods: {
         routeTransitionControl() {
-            if(this.$router.options.history.state.back === '/home' || this.isHomeRoute) return 'home';
+            if (this.$router.options.history.state.back === '/home' || this.isHomeRoute) return 'home';
             else return 'route';
-            //return this.$router.options.history.state.back == '/home' ? 'home' : 'route';
         },
         headerTransitionControl() {
             return 'header';
@@ -84,7 +86,7 @@ body {
     margin: auto auto;
 }
 
-.page-desc{
+.page-desc {
     height: 30rem;
 }
 

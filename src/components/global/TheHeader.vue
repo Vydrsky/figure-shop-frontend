@@ -51,6 +51,7 @@ export default {
 .header-background {
     height: 30rem;
     position: absolute;
+    filter: grayscale(1);
     top: 10rem;
     left: 0px;
     width: 100%;
