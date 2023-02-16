@@ -9,11 +9,14 @@
                                 <transition name="details" appear>
                                     <div v-if="isHovering"
                                         class="d-flex flex-column align-center text-white justify-center h-100">
-                                        <collection-figure-card-button :size="size / 8" icon='mdi-text-box-multiple'
-                                            text="Wyświetl Szczegóły" :link="details"></collection-figure-card-button>
-                                        <collection-figure-card-button v-if="$vuetify.display.mdAndUp" :size="size / 8"
-                                            icon="mdi-magnify" text="Powiększ"
+                                        <collection-figure-card-button v-if="!edit" :size="size / 8"
+                                            icon='mdi-text-box-multiple' text="Wyświetl Szczegóły"
+                                            :link="details"></collection-figure-card-button>
+                                        <collection-figure-card-button v-if="$vuetify.display.mdAndUp && !edit"
+                                            :size="size / 8" icon="mdi-magnify" text="Powiększ"
                                             :link="picture"></collection-figure-card-button>
+                                        <collection-figure-card-button v-if="edit" :size="size / 8" icon="mdi-book-edit"
+                                            text="Edytuj" :link="editCard"></collection-figure-card-button>
                                     </div>
                                 </transition>
                             </div>
@@ -37,6 +40,11 @@ export default {
             type: Object,
             required: true,
             default: null,
+        },
+        edit: {
+            type: Boolean,
+            required: false,
+            default: false
         }
     },
     data() {
@@ -67,6 +75,9 @@ export default {
         },
         picture() {
             return this.$route.path + '/picture/' + this.figure.id + '?image=' + this.placeholder;
+        },
+        editCard(){
+            return '/admin/edit/' + this.figure.id;
         },
         placeholder() {
             return 'https://picsum.photos/1000/1000?' + Date.now() + Math.random();

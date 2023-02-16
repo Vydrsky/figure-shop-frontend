@@ -4,10 +4,10 @@
             <v-col cols="4" md="5" class="pt-10">
                 <v-row justify="start">
                     <v-col cols="12" sm="6" lg="3">
-                        <header-button link to="collection">KOLEKCJA</header-button>
+                        <header-button link to="/collection">KOLEKCJA</header-button>
                     </v-col>
                     <v-col cols="12" sm="6" lg="3">
-                        <header-button link to="order">ZAMÓW</header-button>
+                        <header-button link to="/order">ZAMÓW</header-button>
                     </v-col>
                 </v-row>
             </v-col>
@@ -19,15 +19,15 @@
             <v-col cols="4" md="5" class="pt-10">
                 <v-row justify="end">
                     <v-col cols="12" sm="6" lg="3">
-                        <header-button link to="contact">KONTAKT</header-button>
+                        <header-button link to="/contact">KONTAKT</header-button>
                     </v-col>
                     <v-col cols="12" sm="6" lg="3">
-                        <header-button link to="about">O NAS</header-button>
+                        <header-button link to="/about">O NAS</header-button>
                     </v-col>
                 </v-row>
             </v-col>
         </v-row>
-        <div class="header-background d-flex">
+        <div v-if="!isAdminPage" class="header-background d-flex">
             <v-img cover src="/img/bg3.jpg" class="backdrop"></v-img>
         </div>
     </header>
@@ -39,6 +39,11 @@ import HeaderButton from './HeaderButton.vue'
 export default {
     components: {
         HeaderButton
+    },
+    computed:{
+        isAdminPage(){
+            return this.$route.path.match('admin');
+        }
     }
 }
 </script>

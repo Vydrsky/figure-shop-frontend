@@ -1,27 +1,41 @@
 <template>
-    <v-avatar class="corner" size="50" color="white">
-        <v-icon size="40" color="info">mdi-account</v-icon>
-    </v-avatar>
-    <v-navigation-drawer temporary v-model="showState" class="bg-secondary">
-        
-    </v-navigation-drawer>
+    <div class="d-flex" v-if="loggedIn">
+        <v-navigation-drawer expand-on-hover rail class="bg-secondary" select-strategy="single-leaf">
+            <v-list nav>
+                <v-list-item prepend-icon="mdi-rhombus-split" title="Edytuj Kolekcje" link to="/admin/edit">
+                </v-list-item>
+                <v-divider></v-divider>
+                <v-list-item prepend-icon="mdi-bookmark-outline" title="Przeglądaj Zamówienia" link to="/admin/orders">
+                </v-list-item>
+                <v-divider></v-divider>
+                <v-list-item prepend-icon="mdi-archive" title="Przeglądaj Archiwum" link to="/admin/archive">
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
+    </div>
 </template>
 
 <script>
-export default{
-    data(){
-        return{
+import { mapGetters } from 'vuex';
+
+export default {
+    data() {
+        return {
             showState: false,
         }
     },
+    computed: {
+        ...mapGetters('auth', ['loggedIn'])
+    },
+    methods: {
+        switchState() {
+            this.showState != this.showState;
+            console.log('open');
+        }
+    }
 }
 </script>
 
 <style scoped>
-.corner{
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 5;
-}
+
 </style>
